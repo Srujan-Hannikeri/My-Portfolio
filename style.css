@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(195, 224, 195);
+  cursor: default;
+}
+
+/* ======Navbar====== */
+.navbar {
+  background-color: rgb(3, 57, 3);
+  color: rgb(194, 191, 10);
+  height: 4rem;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 2.5rem;
+  margin: 0.25rem;
+}
+
+.logo img {
+  height: 3rem;
+  width: 4rem;
+  border-radius: 20%;
+  margin-right: 2rem;
+}
+
+.logo h1,
+a {
+  text-decoration: none;
+  color: rgb(194, 191, 10);
+  margin-top: 0.25rem;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 15rem;
+  margin: 1.25rem;
+}
+
+.page {
+  margin-right: 4rem;
+  opacity: 0.7;
+}
+
+.page:hover {
+  opacity: 1;
+}
+
+.page i {
+  margin-right: 0.25rem;
+  display: inline;
+}
+
+/* ======Content====== */
+.content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.first-content {
+  height: 35rem;
+  width: 60rem;
+  border: 2px solid rgb(3, 57, 3);
+  position: relative;
+  left: 17.75rem;
+  bottom: 4rem;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px rgb(3, 57, 3);
+  display: flex;
+  flex-direction: row;
+}
+
+.my-img {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 25%;
+  position: relative;
+  left: 32rem;
+  top: 4rem;
+  border: 1px solid black;
+}
+
+.my-img img {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 25%;
+}
+
+.my-info {
+  height: 30rem;
+  width: 28rem;
+  position: relative;
+  top: 2rem;
+  right: 23rem;
+}
+
+.my-info p {
+  color: #1c2120;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.my-skills {
+  position: relative;
+  top: 4rem;
+}
+
+.my-skills h2 {
+  font-size: 2.5rem;
+}
+
+.my-skills i {
+  display: inline;
+}
+
+.skills {
+  margin-top: 1rem;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.skills li {
+  color: #1c2120;
+  border: 1px solid rgb(3, 57, 3);
+  border-radius: 30px;
+  font-size: 1.25rem;
+  background-color: white;
+  padding: 0.5rem;
+  width: fit-content;
+  margin-right: 0.5rem;
+}
+
+.skills li:hover {
+  background-color: rgb(3, 57, 3);
+  color: white;
+}
+
+/* ======Footer====== */
+.footer {
+  background-color: rgb(12, 63, 12);
+  color: rgb(194, 191, 10);
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+.foot p {
+  margin-top: 0.5rem;
+  cursor: default;
+  opacity: 0.7;
+}
+
+.foot p:hover {
+  opacity: 1;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 45rem;
+  margin-top: 0.5rem;
+}
+
+.social-media i {
+  margin-right: 2rem;
+  opacity: 0.7;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.social-media i:hover {
+  opacity: 1;
+}
