@@ -1,14 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: rgb(195, 224, 195);
   cursor: default;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ======Navbar====== */
@@ -17,9 +19,10 @@ body {
   color: rgb(194, 191, 10);
   height: 4rem;
   width: 100%;
-  position: sticky;
+  position: fixed;
   display: flex;
   flex-direction: row;
+  z-index: 1;
 }
 
 .logo {
@@ -66,11 +69,21 @@ a {
   display: inline;
 }
 
-/* ======Content====== */
-.content {
+.heading {
+  position: relative;
+  top: 5rem;
+  left: 7rem;
+  margin: 0.25rem;
+}
+
+/* ======index page====== */
+.fcontent {
   height: 100vh;
   width: 100%;
   display: flex;
+  position: relative;
+  top: 4rem;
+  bottom: 4rem;
   align-items: center;
 }
 
@@ -80,7 +93,7 @@ a {
   border: 2px solid rgb(3, 57, 3);
   position: relative;
   left: 17.75rem;
-  bottom: 4rem;
+  bottom: 2rem;
   border-radius: 20px;
   box-shadow: 10px 10px 10px 10px rgb(3, 57, 3);
   display: flex;
@@ -95,6 +108,7 @@ a {
   left: 32rem;
   top: 4rem;
   border: 1px solid black;
+  overflow: hidden;
 }
 
 .my-img img {
@@ -148,6 +162,7 @@ a {
   background-color: white;
   padding: 0.5rem;
   width: fit-content;
+  list-style: none;
   margin-right: 0.5rem;
 }
 
@@ -156,14 +171,343 @@ a {
   color: white;
 }
 
+/* ======about page====== */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.content {
+  height: 52rem;
+  width: 80rem;
+  margin: 7rem auto 2rem auto;
+  border: 2px solid rgb(3, 57, 3);
+  box-shadow: 10px 10px 10px 10px rgb(3, 57, 3);
+  border-radius: 30px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.rmy-img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 20px;
+  position: relative;
+  left: 55rem;
+}
+
+.rmy-img img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 20px;
+}
+
+.about {
+  width: 45rem;
+  position: relative;
+  right: 20rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.about > p {
+  width: 45rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.about-me {
+  height: 30rem;
+  width: 30rem;
+  border: 2px solid rgb(3, 57, 3);
+  border-radius: 15% 0 15% 0;
+  background-color: rgb(108, 142, 108);
+  font-weight: 500;
+  position: relative;
+  right: 18rem;
+  top: 20rem;
+  margin: 2rem;
+  box-shadow: 5px 5px 5px 5px rgb(75, 136, 75);
+}
+
+.box {
+  height: fit-content;
+  width: 25rem;
+  border: 1.5px solid rgb(3, 57, 3);
+  background-color: white;
+  margin: 1.75rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.box:hover {
+  background-color: #0b4b14;
+  color: white;
+}
+
+.box > p {
+  width: fit-content;
+  position: relative;
+  left: 1rem;
+}
+
+.box > b {
+  font-weight: 800;
+}
+
+/* ======Skills Page====== */
+
+.skills-div {
+  margin-bottom: 1.5rem;
+}
+
+.skills-div > h1 {
+  width: 50rem;
+}
+
+.skills-div > h1 > i {
+  display: inline;
+}
+
+.thought {
+  height: 8.5rem;
+  width: 20rem;
+  border: 2px solid rgb(3, 57, 3);
+  border-radius: 15% 0 15% 0;
+  background-color: rgb(108, 142, 108);
+  padding: 2rem;
+  position: relative;
+  right: 15rem;
+  top: 22.5rem;
+  margin: 2rem;
+  box-shadow: 5px 5px 5px 5px rgb(75, 136, 75);
+}
+
+.thought p {
+  width: 15rem;
+  position: relative;
+  bottom: 2.75rem;
+}
+
+/* ======Education Page====== */
+
+.education {
+  height: 60rem;
+}
+
+.edu {
+  display: flex;
+  flex-direction: row;
+}
+
+.edu img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: relative;
+  top: 1.5rem;
+}
+
+.edu p {
+  position: relative;
+  left: 6rem;
+  bottom: 5rem;
+  margin-left: 1rem;
+}
+
+.edu ul {
+  margin-bottom: 3rem;
+  width: 80rem;
+}
+
+.edu ul li {
+  line-height: 1rem;
+  height: 9rem;
+  width: 45rem;
+  padding: 0.5rem 1rem;
+}
+
+/* ======Contact Me Page====== */
+.contact {
+  height: 55rem;
+}
+
+.contact-about {
+  margin-left: 4rem;
+}
+
+#contact ul {
+  height: 2rem;
+  width: 6rem;
+  margin: 0 0 6rem 4rem;
+}
+
+#contact li {
+  height: 2.5rem;
+  width: 20rem;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+#contact p i {
+  display: inline;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-tho {
+  position: relative;
+  right: 19rem;
+}
+
+/* =============== Projects =============== */
+
+.project {
+  height: auto;
+  padding-top: 2rem;
+}
+
+#projects {
+  width: 20rem;
+}
+
+#projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 52rem;
+}
+
+.projects .project-card {
+  width: 60rem;
+  min-height: 15rem;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid rgb(3, 57, 3);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  margin-bottom: 2.5rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.project-card:hover {
+  background-color: #0b4b14;
+}
+
+.project-link:hover {
+  color: white;
+}
+
+.project-link img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 0.75rem;
+  margin-top: 2rem;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h1 {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.project-type {
+  display: block;
+  margin: 0.6rem 0 1.3rem;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #666;
+}
+
+.project-info p {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 1rem;
+  position: relative;
+  top: 0rem;
+  left: 0.15rem;
+}
+
+.project-info b {
+  font-size: 1.1rem;
+}
+
+.more-content {
+  display: none;
+}
+
+.showBtn {
+  display: block;
+  margin-left: auto;
+  margin-top: 0rem;
+  padding: 0.8rem 2rem;
+  background: rgb(3, 57, 3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.showBtn:hover {
+  background: rgb(7, 94, 7);
+}
+
+.project-tho {
+  height: max-content;
+  width: 20rem;
+  margin: 1rem;
+  position: relative;
+  top: -80rem;
+  left: 53rem;
+}
+
+.project-tho > p {
+  position: relative;
+  top: 0.5rem;
+  padding: 1rem;
+  width: 15rem;
+}
+
 /* ======Footer====== */
+
+footer {
+  width: 100%;
+  background-color: #0b4b14;
+  color: #d8d11b;
+  text-align: center;
+}
+
 .footer {
   background-color: rgb(12, 63, 12);
   color: rgb(194, 191, 10);
   height: 4rem;
   width: 100%;
-  position: fixed;
-  bottom: 0;
   text-align: center;
 }
 
