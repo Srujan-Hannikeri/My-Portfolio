@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Digital Desk</title>
-    <link rel="icon" type="image" href="/assets/logo.jpeg" />
+    <title>My Digital Desk - About</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
+    <meta name="description" content="About Srujan Hannikeri - B.E. Computer Science student and MERN stack web developer from Belagavi.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,29 +22,45 @@
         <!-------Navbar------>
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="/assets/logo.jpeg" alt="logo"></a>
+                <a href="index.html"><img src="assets/logo.jpeg" alt="logo"></a>
                 <a href="index.html">
                     <h1>My Digital Desk</h1>
                 </a>
             </div>
+
+            <!-- Desktop Nav -->
             <div class="pages">
-                <div class="page"><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></div>
-                <div class="page"><a href="/about.html"><i class="fa-solid fa-circle-info"></i>About Me</a></div>
-                <div class="page"><a href="/education.html"><i class="fa-solid fa-school"></i>Education</a></div>
-                <div class="page"><a href="/skills.html"><i class="fa-solid fa-code"></i>Skills</a></div>
-                <div class="page"><a href="/projects.html"><i class="fa-solid fa-vault"></i>Projects</a></div>
-                <div class="page"><a href="/Contact.html"><i class="fa-solid fa-circle-user"></i>Contact Me</a></div>
+                <div class="page"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+                <div class="page"><a href="about.html" style="opacity:1;"><i class="fa-solid fa-circle-info"></i>About Me</a></div>
+                <div class="page"><a href="education.html"><i class="fa-solid fa-school"></i>Education</a></div>
+                <div class="page"><a href="skills.html"><i class="fa-solid fa-code"></i>Skills</a></div>
+                <div class="page"><a href="projects.html"><i class="fa-solid fa-vault"></i>Projects</a></div>
+                <div class="page"><a href="contact.html"><i class="fa-solid fa-circle-user"></i>Contact Me</a></div>
             </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="page"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+            <div class="page"><a href="about.html"><i class="fa-solid fa-circle-info"></i>About Me</a></div>
+            <div class="page"><a href="education.html"><i class="fa-solid fa-school"></i>Education</a></div>
+            <div class="page"><a href="skills.html"><i class="fa-solid fa-code"></i>Skills</a></div>
+            <div class="page"><a href="projects.html"><i class="fa-solid fa-vault"></i>Projects</a></div>
+            <div class="page"><a href="contact.html"><i class="fa-solid fa-circle-user"></i>Contact Me</a></div>
         </div>
 
         <!-------Content------>
         <h1 class="heading"><i class="fa-solid fa-circle-info"></i> About</h1>
         <div class="content">
-            <div class="rmy-img">
-                <img src="/assets/Srujan Hannikeri.jpeg" alt="Photo">
-            </div>
 
-            <div class="about">
+        <div class="about">
                 <p>
                     I am currently pursuing a Bachelor of Engineering (B.E.) in Computer Science and Engineering at KLS
                     Gogte Institute of Technology, Belagavi, Karnataka. I am passionate about technology and driven by
@@ -57,46 +74,49 @@
                     I enjoy transforming ideas into responsive and user-friendly web applications while continuously
                     learning new technologies and best practices. I believe in continuous improvement, clean code, and
                     embracing challenges as opportunities to grow.<br><br>
-
                 </p>
             </div>
 
-            <div class="about-me">
-                <div class="box">
-                    <p><b>Name: </b>Srujan Hannikeri</p>
+            <!-- Right column: photo + info boxes -->
+            <div class="right-col">
+                <div class="rmy-img">
+                    <img src="assets/Srujan Hannikeri.jpeg" alt="Srujan Hannikeri">
                 </div>
-                <div class="box">
-                    <p><b>Current Address: </b>Plot no. 242, Near Buda Complex, TV Centre, Belagavi - 590019</p>
-                </div>
-                <div class="box">
-                    <p><b>Permanent Address: </b>Plot no. 242, Near Buda Complex, TV Centre, Belagavi - 590019</p>
-                </div>
-                <div class="box">
-                    <p><b>Gmail: </b>srujanhannikeri@gmail.com</p>
-                </div>
-                <div class="box">
-                    <p><b>Phone no.: </b>9886217143</p>
+                <div class="about-me">
+                    <div class="box">
+                        <p><b>Name: </b>Srujan Hannikeri</p>
+                    </div>
+                    <div class="box">
+                        <p><b>Current Address: </b>Plot no. 242, Near Buda Complex, TV Centre, Belagavi - 590019</p>
+                    </div>
+                    <div class="box">
+                        <p><b>Permanent Address: </b>Plot no. 242, Near Buda Complex, TV Centre, Belagavi - 590019</p>
+                    </div>
+                    <div class="box">
+                        <p><b>Gmail: </b>srujanhannikeri@gmail.com</p>
+                    </div>
+                    <div class="box">
+                        <p><b>Phone no.: </b>9886217143</p>
+                    </div>
                 </div>
             </div>
         </div>
+
         <!-------Footer------>
         <footer>
             <div class="footer">
                 <div class="foot">
                     <p>Designed and built by Srujan Hannikeri. © 2026 All rights reserved.</p>
                     <div class="social-media">
-                        <div class="github"><a href="https://github.com/Srujan-Hannikeri" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a></div>
-                        <div class="instagram"><a href="https://instagram.com/srujan_hannikeri" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a></div>
-                        <div class="linkedin"><a href="https://www.linkedin.com/in/srujan-hannikeri-095936336/"
-                                target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                        <div class="github"><a href="https://github.com/Srujan-Hannikeri" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                        <div class="instagram"><a href="https://instagram.com/srujan_hannikeri" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="linkedin"><a href="https://www.linkedin.com/in/srujan-hannikeri-095936336/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="app.js"></script>
 </body>
-
 
 </html>

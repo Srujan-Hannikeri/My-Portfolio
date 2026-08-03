@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image" href="/assets/logo.jpeg" />
-    <title>My Digital Desk</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
+    <title>My Digital Desk - Projects</title>
+    <meta name="description"
+        content="Srujan Hannikeri's projects - NeuroPlus Guard, Market Masters, Stone Paper Scissors, Tic Tac Toe, Simon Says, and Currency Converter.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,305 +23,236 @@
         <!-------Navbar------>
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="/assets/logo.jpeg" alt="logo"></a>
+                <a href="index.html"><img src="assets/logo.jpeg" alt="logo"></a>
                 <a href="index.html">
                     <h1>My Digital Desk</h1>
                 </a>
             </div>
+
+            <!-- Desktop Nav -->
             <div class="pages">
-                <div class="page"><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></div>
-                <div class="page"><a href="/about.html"><i class="fa-solid fa-circle-info"></i>About Me</a></div>
-                <div class="page"><a href="/education.html"><i class="fa-solid fa-school"></i>Education</a></div>
-                <div class="page"><a href="/skills.html"><i class="fa-solid fa-code"></i>Skills</a></div>
-                <div class="page"><a href="/projects.html"><i class="fa-solid fa-vault"></i>Projects</a></div>
-                <div class="page"><a href="/Contact.html"><i class="fa-solid fa-circle-user"></i>Contact Me</a></div>
+                <div class="page"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+                <div class="page"><a href="about.html"><i class="fa-solid fa-circle-info"></i>About Me</a></div>
+                <div class="page"><a href="education.html"><i class="fa-solid fa-school"></i>Education</a></div>
+                <div class="page"><a href="skills.html"><i class="fa-solid fa-code"></i>Skills</a></div>
+                <div class="page"><a href="projects.html" style="opacity:1;"><i
+                            class="fa-solid fa-vault"></i>Projects</a></div>
+                <div class="page"><a href="contact.html"><i class="fa-solid fa-circle-user"></i>Contact Me</a></div>
             </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="page"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+            <div class="page"><a href="about.html"><i class="fa-solid fa-circle-info"></i>About Me</a></div>
+            <div class="page"><a href="education.html"><i class="fa-solid fa-school"></i>Education</a></div>
+            <div class="page"><a href="skills.html"><i class="fa-solid fa-code"></i>Skills</a></div>
+            <div class="page"><a href="projects.html"><i class="fa-solid fa-vault"></i>Projects</a></div>
+            <div class="page"><a href="contact.html"><i class="fa-solid fa-circle-user"></i>Contact Me</a></div>
         </div>
 
         <!-------Content------>
         <h1 class="heading"><i class="fa-solid fa-vault"></i> Projects</h1>
         <div class="content project">
-            <div class="rmy-img">
-                <img src="/assets/Srujan Hannikeri.jpeg" alt="Photo">
-            </div>
 
             <div class="about" id="project">
-                <div class="skills" id="projects">
-                    <ul>
-                        <li class="project-card">
-                            <a href="https://neuro-plus-guard.vercel.app/login" target="_blank" class="project-link">
-                                <img src="/assets/Neuro Plus Guard.jpeg" alt="logo">
-                                <div class="project-info">
-                                    <h1>NeuroPlus Guard - Your Health, Our Focus</h1>
-                                    <span class="project-type">(Major Project)</span>
-                                    <p>
-                                        <b>
-                                            React (Vite) | Express.js | Node.js | MongoDB |
-                                            WebRTC | JWT Authentication | Vercel
-                                        </b>
-                                        <span class="more-content">
-                                            <br><br>
-                                            <b>Key Features:</b>
-                                            <br>
-                                            • Real-time video/voice consultations<br>
-                                            • Appointment booking & scheduling<br>
-                                            • Secure payment integration<br>
-                                            • Prescription & medical records<br>
-                                            • Live notifications<br>
-                                            • Mobile responsive<br><br>
+                <ul class="project-list">
 
-                                            <b>Description:</b>
-                                            <br>
-                                            A full-stack MERN application enabling
-                                            real-time doctor-patient consultations
-                                            with WebRTC video calls, appointment
-                                            scheduling, secure payment processing,
-                                            and medical records management.
-                                        </span>
-                                    </p>
-                                </div>
-                            </a>
+                    <!-- Project 1: NeuroPlus Guard -->
+                    <li class="project-card">
+                        <a href="https://neuro-plus-guard.vercel.app/login" target="_blank" class="project-link">
+                            <img src="assets/Neuro Plus Guard.jpeg" alt="NeuroPlus Guard">
+                            <div class="project-info">
+                                <h1>NeuroPlus Guard - Your Health, Our Focus</h1>
+                                <span class="project-type">(Major Project)</span>
+                                <p>
+                                    <b>React (Vite) | Express.js | Node.js | MongoDB | WebRTC | JWT Authentication |
+                                        Vercel</b>
+                                    <span class="more-content">
+                                        <br><br>
+                                        <b>Key Features:</b><br>
+                                        • Real-time video/voice consultations<br>
+                                        • Appointment booking &amp; scheduling<br>
+                                        • Secure payment integration<br>
+                                        • Prescription &amp; medical records<br>
+                                        • Live notifications<br>
+                                        • Mobile responsive<br><br>
+                                        <b>Description:</b><br>
+                                        A full-stack MERN application enabling real-time doctor-patient consultations
+                                        with WebRTC video calls, appointment scheduling, secure payment processing,
+                                        and medical records management.
+                                    </span>
+                                </p>
+                            </div>
+                        </a>
+                        <button class="showBtn" onclick="toggleContent(event,this)">Show More</button>
+                    </li>
 
-                            <button class="showBtn" onclick="toggleContent(event,this)">
-                                Show More
-                            </button>
-                        </li>
-                    </ul>
+                    <!-- Project 2: Market Masters
+                    <li class="project-card">
+                        <a href="" target="_blank" class="project-link">
+                            <img src="assets/Market Masters.jpg" alt="Market Masters">
+                            <div class="project-info">
+                                <h1>Market Masters - You Manage Your Shop, We Manage Your Bills</h1>
+                                <span class="project-type">(Major Project)</span>
+                                <p>
+                                    <b>HTML | CSS | JavaScript | NodeJS | ExpressJS | ReactJS | MongoDB | Vercel</b>
+                                    <span class="more-content">
+                                        <br><br>
+                                        <b>Key Features:</b><br>
+                                        <b>Description:</b><br>
+                                    </span>
+                                </p>
+                            </div>
+                        </a>
+                        <button class="showBtn" onclick="toggleContent(event,this)">Show More</button>
+                    </li> -->
+
+                    <!-- Project 3: Stone Paper Scissors -->
+                    <li class="project-card">
+                        <a href="https://srujan-hannikeri.github.io/Stone-Paper-Scissors-Game-Website/" target="_blank"
+                            class="project-link">
+                            <img src="assets/Stone Paper Sciccors.jpg" alt="Stone Paper Scissors Game">
+                            <div class="project-info">
+                                <h1>Stone Paper Scissor Game</h1>
+                                <span class="project-type">(Practice Project)</span>
+                                <p>
+                                    <b>HTML | CSS | JavaScript</b>
+                                    <span class="more-content">
+                                        <br><br>
+                                        <b>Key Features:</b><br>
+                                        • Interactive Stone, Paper, and Scissors gameplay<br>
+                                        • Random computer move generation<br>
+                                        • Automatic winner determination<br>
+                                        • Real-time score tracking<br>
+                                        • Instant result and status messages<br>
+                                        • Responsive and user-friendly interface<br><br>
+                                        <b>Description:</b><br>
+                                        A browser-based Stone Paper Scissors game built using HTML, CSS, and
+                                        JavaScript. It allows players to compete against the computer with randomly
+                                        generated moves, displays the winner instantly, and keeps track of both
+                                        player and computer scores in real time.
+                                    </span>
+                                </p>
+                            </div>
+                        </a>
+                        <button class="showBtn" onclick="toggleContent(event,this)">Show More</button>
+                    </li>
+
+                    <!-- Project 4: Tic Tac Toe -->
+                    <li class="project-card">
+                        <a href="https://srujan-hannikeri.github.io/Tic-Tak-Toe-Game-Website/" target="_blank"
+                            class="project-link">
+                            <img src="assets/Tic Tak Toe.png" alt="Tic Tac Toe Game">
+                            <div class="project-info">
+                                <h1>Tic Tak Toe Game</h1>
+                                <span class="project-type">(Practice Project)</span>
+                                <p>
+                                    <b>HTML | CSS | JavaScript</b>
+                                    <span class="more-content">
+                                        <br><br>
+                                        <b>Key Features:</b><br>
+                                        • Two-player gameplay<br>
+                                        • Automatic winner detection<br>
+                                        • Draw match detection<br>
+                                        • New Game and Reset Game options<br>
+                                        • Interactive 3×3 game board<br>
+                                        • Responsive and user-friendly interface<br><br>
+                                        <b>Description:</b><br>
+                                        A browser-based Tic Tac Toe game built using HTML, CSS, and JavaScript.
+                                        It allows two players to play on a 3×3 grid, detects the winner or draw
+                                        automatically, and includes New Game and Reset options for continuous gameplay.
+                                    </span>
+                                </p>
+                            </div>
+                        </a>
+                        <button class="showBtn" onclick="toggleContent(event,this)">Show More</button>
+                    </li>
+
+                    <!-- Project 5: Simon Says -->
+                    <li class="project-card">
+                        <a href="https://srujan-hannikeri.github.io/Simon-Says-Game/" target="_blank"
+                            class="project-link">
+                            <img src="assets/simon-says.png" alt="Simon Says Game">
+                            <div class="project-info">
+                                <h1>Simon Say's Game</h1>
+                                <span class="project-type">(Practice Project)</span>
+                                <p>
+                                    <b>HTML | CSS | JavaScript</b>
+                                    <span class="more-content">
+                                        <br><br>
+                                        <b>Key Features:</b><br>
+                                        • Interactive Simon Says memory game with four colorful buttons.<br>
+                                        • Random color sequence generation for each level.<br>
+                                        • Level progression with increasing difficulty.<br>
+                                        • Keyboard press to start or restart the game.<br>
+                                        • Visual button flash animations for game and user actions.<br>
+                                        • Instant game-over detection with restart option.<br><br>
+                                        <b>Description:</b><br>
+                                        Simon Says is a fun memory-based game where players must observe and
+                                        remember a sequence of colored button flashes. The game begins when the
+                                        user presses any key, after which a random color is highlighted. With each
+                                        new level, another color is added to the sequence, making it progressively
+                                        more challenging.
+                                    </span>
+                                </p>
+                            </div>
+                        </a>
+                        <button class="showBtn" onclick="toggleContent(event,this)">Show More</button>
+                    </li>
+
+                    <!-- Project 6: Currency Converter -->
+                    <li class="project-card">
+                        <a href="https://srujan-hannikeri.github.io/Currency-Convertor/" target="_blank"
+                            class="project-link">
+                            <img src="assets/Currencey Convertor.png" alt="Currency Converter">
+                            <div class="project-info">
+                                <h1>Currency Convertor</h1>
+                                <span class="project-type">(Practice Project)</span>
+                                <p>
+                                    <b>HTML | CSS | JavaScript</b>
+                                    <span class="more-content">
+                                        <br><br>
+                                        <b>Key Features:</b><br>
+                                        • Convert currencies using real-time exchange rates.<br>
+                                        • Amount input and currency selection dropdowns.<br>
+                                        • Automatic country flag updates.<br>
+                                        • Displays the latest exchange rate between selected currencies.<br>
+                                        • Swap icon for easy switching between currencies.<br>
+                                        • Responsive and clean design.<br><br>
+                                        <b>Description:</b><br>
+                                        The Currency Converter is a web application that enables users to convert
+                                        an amount from one currency to another using the latest exchange rates.
+                                        Built using HTML, CSS, and JavaScript, it offers a responsive design and
+                                        seamless user experience across different devices.
+                                    </span>
+                                </p>
+                            </div>
+                        </a>
+                        <button class="showBtn" onclick="toggleContent(event,this)">Show More</button>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Right column: photo + quote -->
+            <div class="right-col">
+                <div class="rmy-img">
+                    <img src="assets/Srujan Hannikeri.jpeg" alt="Srujan Hannikeri">
                 </div>
-
-                <div class="skills" id="projects">
-                    <ul>
-                        <li class="project-card">
-                            <a href="" target="_blank" class="project-link">
-                                <img src="/assets/Market Masters.jpg" alt="logo">
-                                <div class="project-info">
-                                    <h1>Market Masters - You Manage Your Shop, Will Banage Your Bills</h1>
-                                    <span class="project-type">(Major Project)</span>
-                                    <p>
-                                        <b>
-                                            HTML | CSS | JavaScript | NodeJS | ExpressJS | ReactJS | MongoDB |
-                                            Vercel
-                                        </b>
-                                        <span class="more-content">
-                                            <br><br>
-                                            <b>Key Features:</b>
-                                            <br>
-
-                                            <b>Description:</b>
-                                            <br>
-
-                                        </span>
-                                    </p>
-                                </div>
-                            </a>
-
-                            <button class="showBtn" onclick="toggleContent(event,this)">
-                                Show More
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skills" id="projects">
-                    <ul>
-                        <li class="project-card">
-                            <a href=" https://srujan-hannikeri.github.io/Stone-Paper-Scissors-Game-Website/"
-                                target="_blank" class="project-link">
-                                <img src="/assets/Stone Paper Sciccors.jpg" alt="logo">
-                                <div class="project-info">
-                                    <h1>Stone Paper Scissor Game</h1>
-                                    <span class="project-type">(Practice Project)</span>
-                                    <p>
-                                        <b>
-                                            HTML | CSS | JavaScript
-                                        </b>
-                                        <span class="more-content">
-                                            <br><br>
-                                            <b>Key Features:</b>
-                                            <br>
-                                            • Interactive Stone, Paper, and Scissors gameplay<br>
-                                            • Random computer move generation<br>
-                                            • Automatic winner determination<br>
-                                            • Real-time score tracking<br>
-                                            • Instant result and status messages<br>
-                                            • Responsive and user-friendly interface<br><br>
-
-                                            <b>Description:</b>
-                                            <br>
-                                            A browser-based Stone Paper Scissors game
-                                            built using HTML, CSS, and JavaScript. It
-                                            allows players to compete against the
-                                            computer with randomly generated moves,
-                                            displays the winner instantly, and keeps
-                                            track of both player and computer scores
-                                            in real time.
-                                        </span>
-                                    </p>
-                                </div>
-                            </a>
-
-                            <button class="showBtn" onclick="toggleContent(event,this)">
-                                Show More
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skills" id="projects">
-                    <ul>
-                        <li class="project-card">
-                            <a href="https://srujan-hannikeri.github.io/Tic-Tak-Toe-Game-Website/" target="_blank"
-                                class="project-link">
-                                <img src="/assets/Tic Tak Toe.png" alt="logo">
-                                <div class="project-info">
-                                    <h1>Tic Tak Toe Game</h1>
-                                    <span class="project-type">(Practice Project)</span>
-                                    <p>
-                                        <b>
-                                            HTML | CSS | JavaScript
-                                        </b>
-                                        <span class="more-content">
-                                            <br><br>
-                                            <b>Key Features:</b>
-                                            <br>
-                                            • Two-player gameplay<br>
-                                            • Automatic winner detection<br>
-                                            • Draw match detection<br>
-                                            • New Game and Reset Game options<br>
-                                            • Interactive 3×3 game board<br>
-                                            • Responsive and user-friendly interface<br><br>
-
-                                            <b>Description:</b>
-                                            <br>
-                                            A browser-based Tic Tac Toe game built
-                                            using HTML, CSS, and JavaScript. It allows
-                                            two players to play on a 3×3 grid, detects
-                                            the winner or draw automatically, and
-                                            includes New Game and Reset options for
-                                            continuous gameplay.
-                                        </span>
-                                    </p>
-                                </div>
-                            </a>
-
-                            <button class="showBtn" onclick="toggleContent(event,this)">
-                                Show More
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skills" id="projects">
-                    <ul>
-                        <li class="project-card">
-                            <a href="https://srujan-hannikeri.github.io/Simon-Says-Game/" target="_blank"
-                                class="project-link">
-                                <img src="/assets/simon-says.png" alt="logo">
-                                <div class="project-info">
-                                    <h1>Simon Say's Game</h1>
-                                    <span class="project-type">(Practice Project)</span>
-                                    <p>
-                                        <b>
-                                            HTML | CSS | JavaScript
-                                        </b>
-                                        <span class="more-content">
-                                            <br><br>
-                                            <b>Key Features:</b>
-                                            <br>
-                                            • Interactive Simon Says memory game with four colorful buttons.<br>
-                                            • Random color sequence generation for each level.<br>
-                                            • User input validation against the generated sequence.<br>
-                                            • Level progression with increasing difficulty.<br>
-                                            • Keyboard press to start or restart the game.<br>
-                                            • Visual button flash animations for game and user actions.<br>
-                                            • Instant game-over detection with restart option.<br>
-                                            • Simple, responsive, and user-friendly interface.
-                                            <br><br>
-
-                                            <b>Description:</b>
-                                            <br>
-                                            Simon Says is a fun memory-based game where players must observe and
-                                            remember a sequence of colored button flashes. The game begins when the
-                                            user presses any key, after which a random color is highlighted. With
-                                            each new level, another color is added to the sequence, making it
-                                            progressively more challenging. Players must repeat the exact sequence
-                                            by clicking the colored buttons in the correct order. If the sequence is
-                                            entered correctly, the player advances to the next level. An incorrect
-                                            click ends the game, displaying the final score and allowing the player
-                                            to restart by pressing any key.
-                                            <br>
-                                        </span>
-                                    </p>
-                                </div>
-                            </a>
-
-                            <button class="showBtn" onclick="toggleContent(event,this)">
-                                Show More
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skills" id="projects">
-                    <ul>
-                        <li class="project-card">
-                            <a href="https://srujan-hannikeri.github.io/Currency-Convertor/" target="_blank"
-                                class="project-link">
-                                <img src="/assets/Currencey Convertor.png" alt="logo">
-                                <div class="project-info">
-                                    <h1>Currency Convertor</h1>
-                                    <span class="project-type">(Practice Project)</span>
-                                    <p>
-                                        <b>
-                                            HTML | CSS | JavaScript
-                                        </b>
-                                        <span class="more-content">
-                                            <br><br>
-                                            <b>Key Features:</b>
-                                            <br>
-                                            • Convert currencies between multiple countries using real-time exchange
-                                            rates.<br>
-                                            • User-friendly interface with amount input and country selection
-                                            dropdowns.<br>
-                                            • Automatic country flag updates based on the selected currency.<br>
-                                            • Displays the latest exchange rate between selected currencies.<br>
-                                            • Swap icon for easy switching between source and destination
-                                            currencies.<br>
-                                            • Supports a wide range of international currencies.<br>
-                                            • Responsive and clean design for a smooth user experience.<br>
-                                            • Fast and accurate currency conversion using API data.
-                                            <br><br>
-
-                                            <b>Description:</b>
-                                            <br>
-                                            The Currency Converter is a web application that enables users to
-                                            convert an amount from one currency to another using the latest exchange
-                                            rates. Users can enter an amount, select the source and target
-                                            currencies from dropdown menus, and instantly view the converted value
-                                            along with the current exchange rate. The application dynamically
-                                            updates country flags based on the selected currencies and provides an
-                                            intuitive interface for quick and accurate conversions. Built using
-                                            HTML, CSS, and JavaScript, it offers a responsive design and seamless
-                                            user experience across different devices.
-                                            <br>
-                                        </span>
-                                </div>
-                            </a>
-
-                            <button class="showBtn" onclick="toggleContent(event,this)">
-                                Show More
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-
                 <div class="thought project-tho">
                     <p class="box">"We cannot solve our problems with the same thinking we used when we created
                         them."<br><br>
                         <b>— Albert Einstein</b>
                     </p>
                 </div>
-
             </div>
         </div>
 

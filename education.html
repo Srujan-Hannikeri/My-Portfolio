@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image" href="/assets/logo.jpeg" />
-    <title>My Digital Desk</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
+    <title>My Digital Desk - Education</title>
+    <meta name="description"
+        content="Srujan Hannikeri's education - KLS Gogte Institute of Technology, Expert PUC College, and St. Xavier's High School.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,41 +23,57 @@
         <!-------Navbar------>
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="/assets/logo.jpeg" alt="logo"></a>
+                <a href="index.html"><img src="assets/logo.jpeg" alt="logo"></a>
                 <a href="index.html">
                     <h1>My Digital Desk</h1>
                 </a>
             </div>
+
+            <!-- Desktop Nav -->
             <div class="pages">
-                <div class="page"><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></div>
-                <div class="page"><a href="/about.html"><i class="fa-solid fa-circle-info"></i>About Me</a></div>
-                <div class="page"><a href="/education.html"><i class="fa-solid fa-school"></i>Education</a></div>
-                <div class="page"><a href="/skills.html"><i class="fa-solid fa-code"></i>Skills</a></div>
-                <div class="page"><a href="/projects.html"><i class="fa-solid fa-vault"></i>Projects</a></div>
-                <div class="page"><a href="/Contact.html"><i class="fa-solid fa-circle-user"></i>Contact Me</a></div>
+                <div class="page"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+                <div class="page"><a href="about.html"><i class="fa-solid fa-circle-info"></i>About Me</a></div>
+                <div class="page"><a href="education.html" style="opacity:1;"><i
+                            class="fa-solid fa-school"></i>Education</a></div>
+                <div class="page"><a href="skills.html"><i class="fa-solid fa-code"></i>Skills</a></div>
+                <div class="page"><a href="projects.html"><i class="fa-solid fa-vault"></i>Projects</a></div>
+                <div class="page"><a href="contact.html"><i class="fa-solid fa-circle-user"></i>Contact Me</a></div>
             </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="page"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></div>
+            <div class="page"><a href="about.html"><i class="fa-solid fa-circle-info"></i>About Me</a></div>
+            <div class="page"><a href="education.html"><i class="fa-solid fa-school"></i>Education</a></div>
+            <div class="page"><a href="skills.html"><i class="fa-solid fa-code"></i>Skills</a></div>
+            <div class="page"><a href="projects.html"><i class="fa-solid fa-vault"></i>Projects</a></div>
+            <div class="page"><a href="contact.html"><i class="fa-solid fa-circle-user"></i>Contact Me</a></div>
         </div>
 
         <!-------Content------>
         <h1 class="heading"><i class="fa-solid fa-school"></i> Education</h1>
         <div class="content education">
-            <div class="rmy-img">
-                <img src="/assets/Srujan Hannikeri.jpeg" alt="Photo">
-            </div>
-
             <div class="about about-skills">
                 <div class="skills-div">
-                    <h1 style="margin-bottom: 2rem;">Engineering College <i class="fa-solid fa-graduation-cap"></i></i>
-                    </h1>
+                    <h1 style="margin-bottom: 2rem;">Engineering College <i class="fa-solid fa-graduation-cap"></i></h1>
                     <div class="skills edu">
                         <ul>
-
                             <a href="https://git.edu/" target="_blank">
-
-                                <li><img src="/assets/kls_git_logo.webp" alt="logo">
-                                    <p><b>KLS Gogte Institute of Technology,
-                                            Udambag, Belagavi</b><br><br> 2024-2028 <br>
-                                        <br>Bachelor Of Engineering <br><br>Computer Science and Engineering
+                                <li>
+                                    <img src="assets/kls_git_logo.webp" alt="KLS GIT logo">
+                                    <p>
+                                        <b>KLS Gogte Institute of Technology, Udambag, Belagavi</b><br>
+                                        2024-2028 <br>
+                                        Bachelor Of Engineering <br>
+                                        Computer Science and Engineering
                                     </p>
                                 </li>
                             </a>
@@ -64,45 +82,54 @@
                 </div>
 
                 <div class="skills-div">
-                    <h1 style="margin-bottom: 2rem;">PUC College <i class="fa-solid fa-building-columns"></i></i></h1>
+                    <h1 style="margin-bottom: 2rem;">PUC College <i class="fa-solid fa-building-columns"></i></h1>
                     <div class="skills edu">
                         <ul>
-
-                            <a href="https://www.expertedu.co.in/" target="_blank">
-
-                                <li><img src="/assets/Expert-logo.jpg" alt="logo">
-                                    <p><b>Expert Pre University College, Kodiabail, Mangalore</b><br><br> 2022-2024 <br>
-                                        <br>Pre University College<br><br>92.66
+                            <a href="https://www.expertedu.co.in/" target="_blank" class="expert">
+                                <li>
+                                    <img src="assets/Expert-logo.jpg" alt="Expert PUC logo">
+                                    <p>
+                                        <b>Expert Pre University College, Kodiabail, Mangalore</b><br>
+                                        2022-2024 <br>
+                                        Pre University College<br>
+                                        92.66
                                     </p>
                                 </li>
                             </a>
                         </ul>
                     </div>
                 </div>
+
                 <div class="skills-div">
                     <h1 style="margin-bottom: 2rem;">School <i class="fa-solid fa-school"></i></h1>
                     <div class="skills edu">
                         <ul>
-
                             <a href="https://en.wikipedia.org/wiki/St_Xavier%27s_School,_Belgaum" target="_blank">
-
-                                <li><img src="/assets/Xavier's logo.jpeg" alt="logo">
-                                    <p><b>St. Xavier's High School, Camp, Belagavi</b><br><br> 2011-2022 <br>
-                                        <br>Schooling <br><br>94.88
+                                <li>
+                                    <img src="assets/Xavier's logo.jpeg" alt="St Xavier's logo">
+                                    <p>
+                                        <b>St. Xavier's High School, Camp, Belagavi</b><br>
+                                        2011-2022 <br>
+                                        Schooling <br>
+                                        94.88
                                     </p>
                                 </li>
                             </a>
                         </ul>
                     </div>
                 </div>
-
             </div>
 
-
-            <div class="thought">
-                <p class="box">"Education is not the learning of facts, but the training of the mind to think."<br><br>
-                    <b>— Albert Einstein</b>
-                </p>
+            <div class="right-col">
+                <div class="rmy-img">
+                    <img src="assets/Srujan Hannikeri.jpeg" alt="Srujan Hannikeri">
+                </div>
+                <div class="thought">
+                    <p class="box">"Education is not the learning of facts, but the training of the mind to
+                        think."<br><br>
+                        <b>— Albert Einstein</b>
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -123,6 +150,7 @@
             </div>
         </footer>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
