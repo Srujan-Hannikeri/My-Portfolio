@@ -4,12 +4,18 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: rgb(195, 224, 195);
   cursor: default;
   overflow-x: hidden;
   overflow-y: auto;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -102,7 +108,6 @@ a {
   transform-origin: center;
 }
 
-/* Hamburger open (X) state */
 .hamburger.open span:nth-child(1) {
   transform: translateY(0.55rem) rotate(45deg);
 }
@@ -116,7 +121,6 @@ a {
   transform: translateY(-0.55rem) rotate(-45deg);
 }
 
-/* Mobile Menu Overlay */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -453,7 +457,6 @@ a {
   width: 100%;
 }
 
-/* FIX: was width: 50rem — hard fixed, broke on all small screens */
 .edu ul li {
   display: flex;
   flex-direction: row;
@@ -794,7 +797,11 @@ footer {
 /* ======RESPONSIVE — MOBILE  (max-width: 600px)====== */
 @media (max-width: 600px) {
   .navbar {
-    padding: 0 1rem;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .hamburger {
+    margin-right: 0.5rem;
   }
 
   .logo img {
@@ -812,11 +819,43 @@ footer {
     font-size: 1.2rem;
   }
 
+  .logo h1 {
+    font-size: 0.85rem;
+    color: rgb(194, 191, 10);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 7rem);
+  }
+
+  .home-page {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .home-page .container {
+    height: auto;
+    overflow: visible;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-page .fcontent {
+    flex: 1;
+    overflow: visible;
+    padding: 5.5rem 1rem 2rem;
+    min-height: unset;
+    align-items: center;
+    justify-content: center;
+  }
+
   /* Index page */
   .first-content {
     padding: 1.5rem 1rem;
     border-radius: 14px;
-    box-shadow: 4px 4px 10px 4px rgb(3, 57, 3);
+    box-shadow: 3px 3px 6px 2px rgb(3, 57, 3);
   }
 
   .my-img {
@@ -838,11 +877,11 @@ footer {
   }
 
   .content {
-    width: 95%;
+    width: calc(100% - 2.5rem);
     margin: 5.5rem auto 1.5rem auto;
     padding: 1.25rem;
     border-radius: 16px;
-    box-shadow: 4px 4px 8px 4px rgb(3, 57, 3);
+    box-shadow: 3px 3px 6px 2px rgb(3, 57, 3);
     flex-direction: column;
     align-items: center;
   }
