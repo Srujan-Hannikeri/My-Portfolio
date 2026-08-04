@@ -1004,7 +1004,7 @@ footer {
 /* ======RESPONSIVE — VERY SMALL MOBILE  (max-width: 300px)====== */
 @media (max-width: 300px) {
   .logo h1 {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     max-width: calc(100vw - 6rem);
   }
 
