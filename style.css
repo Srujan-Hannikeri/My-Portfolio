@@ -1001,8 +1001,8 @@ footer {
   }
 }
 
-/* ======RESPONSIVE — VERY SMALL MOBILE  (max-width: 380px)====== */
-@media (max-width: 380px) {
+/* ======RESPONSIVE — VERY SMALL MOBILE  (max-width: 300px)====== */
+@media (max-width: 300px) {
   .logo h1 {
     font-size: 0.75rem;
     max-width: calc(100vw - 6rem);
